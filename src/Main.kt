@@ -6,7 +6,7 @@ fun main() {
     println(count)
 }
 
-fun List<String>.customCount(check: (String) -> Boolean, msg: String): Int{
+fun <T> List<T>.customCount(check: (T) -> Boolean, msg: String): Int{
     println(msg)
     var count = 0
     for(item in this){
