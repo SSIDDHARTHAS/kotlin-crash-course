@@ -1,10 +1,16 @@
+fun checker(x:Int) {
+    if(x == 2){
+        println("x is 2")
+    } else if(x == 3){
+        println("x is 3")
+    } else {
+        println("x is not 2 or 3")
+    }
+}
 fun main() {
-    val amIAnAdult = false
-    val amIAProgrammer = true
-    val amIAnAdultProgrammer = amIAnAdult and amIAProgrammer
-    val amIAnAdultOrAProgrammer = amIAnAdult or amIAProgrammer
-    println("Am I an adult programmer? : $amIAnAdultProgrammer")
-    println("Am I an adult or a programmer? : $amIAnAdultOrAProgrammer")
-    println(amIAProgrammer != amIAnAdult)
-    println(amIAProgrammer == amIAnAdult)
+    checker(1+1)
+    checker(100)
+    val x = (Math.random() * 10).toInt()
+    val parity = if(x % 2 == 0) "even" else "odd"
+    println("$x is $parity number")
 }
