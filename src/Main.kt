@@ -1,26 +1,12 @@
 fun main() {
-    val shoppingList = mutableListOf("Lamborghini", "Penthouse", "Rolex")
-    shoppingList.add("Ferrari")
-
-    println("Printing using while loop")
-    var i = 0
-    while(i < shoppingList.size){
-        println(shoppingList[i])
-        i++
-    }
-
-    println("Printing using for in List")
-    for(item in shoppingList){
-        println(item)
-    }
-
-    println("Printing using while for in Range")
-    for(j in 1..< shoppingList.size){
-        println(shoppingList[j])
-    }
-
-    println("Printing using forEach")
-    shoppingList.forEach{
-        println(it)
+    val marks = ((Math.random() * 100) + 1).toInt()
+    when(marks){
+        in 60..< 80 -> println("C")
+        85 -> println("S")
+        in 80..< 90 -> println("B")
+        in 90 .. 100 -> println("A")
+        else -> {
+            println("Congratulations, You played yourself")
+        }
     }
 }
