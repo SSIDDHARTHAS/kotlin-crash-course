@@ -1,7 +1,14 @@
 fun main() {
-    println(5.isOdd())
-}
+    val dog = Dog(3)
+    dog.introduce()
+    dog.bark()
+    dog.makeSound()
 
-fun Int.isOdd(): Boolean {
-    return this % 2 == 1
+    val cat = Cat()
+    cat.introduce()
+    cat.meow()
+    cat.makeSound()
+
+//    val animal = Animal("giraffe")
+    // not possible since Animal is abstract class
 }
