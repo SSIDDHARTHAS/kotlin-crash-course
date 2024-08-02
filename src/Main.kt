@@ -11,4 +11,12 @@ fun main() {
 
 //    val animal = Animal("giraffe")
     // not possible since Animal is abstract class
+
+    val bear = object: Animal("Bear"){
+        override fun makeSound() {
+            println("Growl")
+        }
+    }
+    bear.introduce()
+    bear.makeSound()
 }

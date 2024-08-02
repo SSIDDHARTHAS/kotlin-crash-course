@@ -4,7 +4,7 @@ abstract class Animal(
 ) {
 
     init {
-        println("New animal created")
+        println("New animal named $name created")
     }
 
     fun introduce() {
